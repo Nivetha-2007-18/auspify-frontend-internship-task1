@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FocusFlow - the study planner that helps students plan smarter, focus longer and stress less." />
+  <title>FocusFlow | Plan Smarter. Study Better.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo"><span class="logo-dot"></span>Focus<span class="grad">Flow</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact" class="btn btn-small">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="pill"><i class="pulse"></i> New: AI study schedules</span>
+          <h1>Plan smarter.<br /><span class="grad typed-wrap"><span id="typed"></span><span class="cursor">|</span></span></h1>
+          <p>FocusFlow turns your deadlines, classes and goals into a simple daily plan, so you can spend less time worrying and more time learning.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Start Free <span aria-hidden="true">→</span></a>
+            <a href="#how" class="btn btn-ghost">▶ See How It Works</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong data-count="50" data-suffix="K+">0</strong><span>Students</span></li>
+            <li><strong data-count="4.8" data-decimals="1" data-suffix="/5">0</strong><span>Avg. rating</span></li>
+            <li><strong data-count="2" data-suffix="M+">0</strong><span>Tasks done</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="mock-card glass">
+            <div class="mock-top"><i></i><i></i><i></i></div>
+            <p class="mock-title">Today's Plan</p>
+            <div class="mock-item done"><span></span>Revise Chapter 4 <em>9:00</em></div>
+            <div class="mock-item"><span></span>Maths assignment <em>11:30</em></div>
+            <div class="mock-item"><span></span>Group project call <em>15:00</em></div>
+            <div class="mock-bar"><div></div></div>
+            <small>68% of today's goals done</small>
+          </div>
+          <div class="float-card fc-1 glass">🔥 <b>12 day</b> streak</div>
+          <div class="float-card fc-2 glass">⏱️ <b>25:00</b> focus</div>
+          <div class="float-card fc-3 glass">✅ Exam in <b>6 days</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <section class="marquee" aria-label="Loved by students at">
+      <div class="marquee-track">
+        <span>🎓 IIT Madras</span><span>🎓 Anna University</span><span>🎓 PSG Tech</span><span>🎓 VIT</span><span>🎓 SRM</span><span>🎓 NIT Trichy</span><span>🎓 Amrita</span>
+        <span>🎓 IIT Madras</span><span>🎓 Anna University</span><span>🎓 PSG Tech</span><span>🎓 VIT</span><span>🎓 SRM</span><span>🎓 NIT Trichy</span><span>🎓 Amrita</span>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Features</span>
+          <h2>Everything you need to <span class="grad">stay on track</span></h2>
+          <p>Simple tools built around how students actually study.</p>
+        </div>
+        <div class="grid features-grid">
+          <article class="card glass reveal"><div class="icon">📅</div><h3>Smart Planner</h3><p>Add your exams and assignments and get a balanced weekly plan automatically.</p></article>
+          <article class="card glass reveal"><div class="icon">⏱️</div><h3>Focus Timer</h3><p>Pomodoro sessions with gentle breaks help you stay concentrated without burning out.</p></article>
+          <article class="card glass reveal"><div class="icon">📈</div><h3>Progress Insights</h3><p>See your streaks and study hours at a glance and spot what needs more time.</p></article>
+          <article class="card glass reveal"><div class="icon">🔔</div><h3>Reminders</h3><p>Timely nudges before deadlines, so nothing sneaks up on you.</p></article>
+          <article class="card glass reveal"><div class="icon">👥</div><h3>Study Groups</h3><p>Share plans and goals with classmates and keep each other accountable.</p></article>
+          <article class="card glass reveal"><div class="icon">📱</div><h3>Works Everywhere</h3><p>Phone, tablet or laptop, your plan stays in sync across every device.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section-alt" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">How it works</span>
+          <h2>Get started in <span class="grad">3 easy steps</span></h2>
+          <p>From sign-up to your first plan in under two minutes.</p>
+        </div>
+        <ol class="grid steps">
+          <li class="step reveal"><span class="step-num">1</span><h3>Create your account</h3><p>Sign up free with your email. No card needed.</p></li>
+          <li class="step reveal"><span class="step-num">2</span><h3>Add your goals</h3><p>Enter subjects, deadlines and how many hours you can study.</p></li>
+          <li class="step reveal"><span class="step-num">3</span><h3>Follow your plan</h3><p>Check off tasks daily and watch your progress grow.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Reviews</span>
+          <h2>Students <span class="grad">love it</span></h2>
+          <p>Sample feedback for this demo page.</p>
+        </div>
+        <div class="grid reviews-grid">
+          <figure class="card glass reveal"><div class="stars">★★★★★</div><blockquote>"I finally stopped cramming the night before exams. The weekly plan is a lifesaver."</blockquote><figcaption><span class="avatar">A</span>Aarthi, Engineering student</figcaption></figure>
+          <figure class="card glass reveal"><div class="stars">★★★★★</div><blockquote>"The focus timer and streaks keep me motivated. Simple and clean."</blockquote><figcaption><span class="avatar">R</span>Rahul, B.Sc. student</figcaption></figure>
+          <figure class="card glass reveal"><div class="stars">★★★★☆</div><blockquote>"Our study group uses shared plans every week. Great for project deadlines."</blockquote><figcaption><span class="avatar">S</span>Sneha, MBA student</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section section-alt" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Pricing</span>
+          <h2>Simple, <span class="grad">student-friendly</span> pricing</h2>
+          <p>Start free. Upgrade when you need more.</p>
+        </div>
+        <div class="grid pricing-grid">
+          <article class="card glass price-card reveal">
+            <h3>Free</h3>
+            <p class="price">₹0<small>/month</small></p>
+            <ul><li>Smart planner</li><li>Focus timer</li><li>Up to 3 subjects</li></ul>
+            <a href="#contact" class="btn btn-ghost">Get Started</a>
+          </article>
+          <article class="card glass price-card featured reveal">
+            <span class="pill pop">Most popular</span>
+            <h3>Pro</h3>
+            <p class="price">₹199<small>/month</small></p>
+            <ul><li>Everything in Free</li><li>Unlimited subjects</li><li>Progress insights</li><li>Study groups</li></ul>
+            <a href="#contact" class="btn btn-primary">Go Pro</a>
+          </article>
+          <article class="card glass price-card reveal">
+            <h3>Campus</h3>
+            <p class="price">Custom</p>
+            <ul><li>Everything in Pro</li><li>Admin dashboard</li><li>Priority support</li></ul>
+            <a href="#contact" class="btn btn-ghost">Contact Us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="cta" id="contact">
+      <div class="blob blob-2"></div>
+      <div class="container cta-inner reveal">
+        <h2>Ready to take control of your studies?</h2>
+        <p>Join thousands of students already planning smarter with FocusFlow.</p>
+        <form class="cta-form" id="ctaForm" novalidate>
+          <label for="email" class="sr-only">Email address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+          <button type="submit" class="btn btn-light">Get Early Access</button>
+        </form>
+        <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo"><span class="logo-dot"></span>Focus<span class="grad">Flow</span></a>
+      <ul class="footer-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p>&copy; 2026 FocusFlow. Built for Auspify Internship Task 1.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
